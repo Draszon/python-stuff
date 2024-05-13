@@ -47,4 +47,3 @@ while playerOneScore != 0 and playerTwoScore != 0:
   if playerTwoScore == 0:
     print("Gratulálok {}! Megnyerted a játékot!".format(playerTwo))
     break
-#Ez csak egy komment!
