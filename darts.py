@@ -17,6 +17,9 @@ def scoreCalculator(playerName, playerScore):
   while throwCounter <= 3:
     currentThrow = input("{}. dobás eredménye: ".format(throwCounter))
 
+    while not currentThrow: #and currentThrow.startswith("d") and currentThrow.startswith("t"):
+      currentThrow = input("{}. dobás eredménye: ".format(throwCounter))
+
     if currentThrow.startswith('d'):
       currentThrow = int(currentThrow[1:]) * 2
     elif currentThrow.startswith('t'):
