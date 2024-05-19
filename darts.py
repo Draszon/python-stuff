@@ -25,19 +25,19 @@ def scoreCalculator(playerName, playerScore):
       currentThrow = int(currentThrow[1:]) * 2
       currentTotal += currentThrow
       throwCounter += 1
-      if playerScore - currentTotal < 0:
+      if playerScore - currentTotal <= 0:
         break
     elif currentThrow.startswith('t'):
       currentThrow = int(currentThrow[1:]) * 3
       currentTotal += currentThrow
       throwCounter += 1
-      if playerScore - currentTotal < 0:
+      if playerScore - currentTotal <= 0:
         break
     else:
       currentThrow = int(currentThrow)
       currentTotal += currentThrow
       throwCounter += 1
-      if playerScore - currentTotal < 0:
+      if playerScore - currentTotal <= 0:
         break
 
   if playerScore - currentTotal < 0:
